@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="RunApp.Cli/RunApp.Cli.csproj" />
+  <Project Path="RunApp.Core.Tests/RunApp.Core.Tests.csproj" />
+  <Project Path="RunApp.Core/RunApp.Core.csproj" />
+</Solution>
