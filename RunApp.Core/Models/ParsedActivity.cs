@@ -14,4 +14,9 @@ namespace RunApp.Core.Models;
 // TIP: IReadOnlyList means other code can look at the dots but can't add or remove any.
 public sealed record ParsedActivity
 {
+    public string? Name {get; init; }    
+    public string? Type {get; init; }
+    public string? format {get; init;}
+    public IReadOnlyList<TrackPoint>? points {get; init; }
 }
+

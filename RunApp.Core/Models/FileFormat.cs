@@ -8,4 +8,7 @@ namespace RunApp.Core.Models;
 // (You only need Gpx for a long time. The others are for later.)
 public enum FileFormat
 {
+    Gpx,
+    Tcx,
+    Fit,
 }

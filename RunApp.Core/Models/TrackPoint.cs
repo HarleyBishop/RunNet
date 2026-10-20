@@ -1,3 +1,5 @@
+using System.ComponentModel;
+
 namespace RunApp.Core.Models;
 
 // WHAT IS THIS?
@@ -16,6 +18,20 @@ namespace RunApp.Core.Models;
 //
 // TIP: Write each property like this: public double? ElevationMeters { get; init; }
 //      "init" means you can set it once when you make the dot, and never change it after.
+
+
+// GPX Trackpoint
+//<trkpt lat="-27.4774190" lon="153.1257400">
+//    <ele>4.7</ele>
+//    <time>2026-04-12T05:58:10Z</time>
+//   </trkpt>
 public sealed record TrackPoint
+
 {
+    public GeoCoordinate Coordinate {get; init; }
+    public DateTimeOffset Time {get; init; }
+    public double? ElevationMeters {get; init; }
+    public int? HeartRate {get; init; }
+    public int? StepPerMin {get; init; }
+
 }

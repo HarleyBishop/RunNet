@@ -10,4 +10,10 @@ namespace RunApp.Core.Models;
 // TIP: Your GPX files say <type>running</type>. The parser will turn that word into Run.
 public enum ActivityType
 {
+    Run,
+    Walk,
+    Climb,
+    Hike,
+    Ride
+
 }
