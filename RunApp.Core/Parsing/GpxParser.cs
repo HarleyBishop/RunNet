@@ -6,7 +6,6 @@ namespace RunApp.Core.Parsing;
 // WHAT IS THIS?
 // Reads a .gpx file and turns it into a ParsedActivity.
 
-
 public class GpxParser
 {
     public ParsedActivity Parse(Stream stream)
