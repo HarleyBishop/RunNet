@@ -9,4 +9,5 @@ namespace RunApp.Core.Parsing;
 //   public ActivityParseException(string message) : base(message) { }
 public class ActivityParseException : Exception
 {
+    public ActivityParseException(string message): base(message) {}
 }
