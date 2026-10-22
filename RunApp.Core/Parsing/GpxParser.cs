@@ -26,7 +26,7 @@ public class GpxParser
                     (double)pt.Attribute("lon")!),
 
                 
-                Time = (DateTimeOffset)pt.Element(gpx + "time")!,
+                Time = (DateTimeOffset?)pt.Element(gpx + "time")?? throw new ActivityParseException("Track Points do not have Time Values"),
 
                 ElevationMeters = (double?)pt.Element(gpx + "ele"),
             })
